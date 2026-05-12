@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,6 +29,7 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/portfolio-modal.css">
   </head>
   <body>
 
@@ -79,6 +81,24 @@
           </div>
         </div>
 		<section class="education-section">
+			<h2 class="section-title">Experience</h2>
+
+			<div class="timeline">
+
+			<div class="timeline-item">
+				<div class="dot"></div>
+				<div class="content">
+				<h3>Plan B Media</h3>
+				<p class="date"><strong>12 Jan - 15 Feb</strong></p>
+				<p><strong>Position:</strong> Software Developer Intern</p>
+				<p><strong>Responsibilities:</strong> พัฒนาและดูแลระบบสำหรับงานภายในบริษัท, ทำงานทั้งฝั่ง Frontend และ Backend, จัดการฐานข้อมูล</p>
+				</div>
+			</div>
+
+			</div>
+		</section>
+
+		<section class="education-section">
 			<h2 class="section-title">Education</h2>
 
 			<div class="timeline">
@@ -100,8 +120,8 @@
 				<p class="date"><strong>2019 – 2022</strong></p>
 				<p>Arts - Chinese</p>
 				<p>GPA: 2.90</p>
-				</div>
-			</div>
+					</div>
+					</div>
 
 			</div>
 		</section>
@@ -125,6 +145,10 @@
 				<div class="skill-item">
 				<img src="images/javascript.png" alt="JavaScript">
 				<p>JavaScript</p>
+				</div>
+				<div class="skill-item">
+				<img src="images/typescript.png" alt="TypeScript">
+				<p>TypeScript</p>
 				</div>
 				<div class="skill-item">
 				<img src="images/py.png" alt="Python">
@@ -224,6 +248,18 @@
 				<img src="images/aws.png" alt="AWS">
 				<p>AWS</p>
 				</div>
+				<div class="skill-item">
+				<img src="images/jira.png" alt="Jira">
+				<p>Jira</p>
+				</div>
+				<div class="skill-item">
+				<img src="images/XAMPP.png" alt="XAMPP">
+				<p>XAMPP</p>
+				</div>
+				<div class="skill-item">
+				<img src="images/prisma.png" alt="Prisma ORM">
+				<p>Prisma ORM</p>
+				</div>
 			</div>
 			</div>
 
@@ -234,28 +270,55 @@
     		<div class="row">
     			<div class="col-md-4">
     				<div class="blog-entry ftco-animate">
-							<a href="#" class="img img-2" style="background-image: url(images/busem.png);"></a>
+							<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/busem.png); cursor:pointer;" onclick="openModal('BUSEM Seminar Website', 'BUSEM Seminar Project เป็นโปรเจ็คที่เกิดขึ้นมาจากความร่วมมือของนักศึกษา และ คณะการสร้างเจ้าของธุรกิจและการบริหารกิจการ', ['images/busem.png'])"></a>
 							<div class="text text-2 pt-2 mt-3">
-	              <h3 class="mb-4">BUSEM Seminar Website</a></h3>
+	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModal('BUSEM Seminar Website', 'BUSEM Seminar Project เป็นโปรเจ็คที่เกิดขึ้นมาจากความร่วมมือของนักศึกษา และ คณะการสร้างเจ้าของธุรกิจและการบริหารกิจการ', ['images/busem.png'])">BUSEM Seminar Website</h3>
 	              <p class="mb-4">BUSEM Seminar Project เป็นโปรเจ็คที่เกิดขึ้นมาจากความร่วมมือของนักศึกษา และ คณะการสร้างเจ้าของธุรกิจและการบริหารกิจการ เพื่อทำเว็บไซต์สำหรับลงทะเบียนงานสัมมนาของนักศึกษาภายในคณะ</p>
 	            </div>
 						</div>
     			</div>
     			<div class="col-md-4">
     				<div class="blog-entry ftco-animate">
-							<a href="#" class="img img-2" style="background-image: url(images/weatherpro.png);"></a>
+							<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/weatherpro.png); cursor:pointer;" onclick="openModal('WeatherSpring', 'WeatherSpring เป็นเว็บไซต์ตรวจเช็คสภาพอากาศในจังหวัดต่างๆของประเทศไทย ณ เวลาปัจจุบัน', ['images/weatherpro.png'])"></a>
 							<div class="text text-2 pt-2 mt-3">
-	              <h3 class="mb-4"><a href="#">WeatherSpring</a></h3>
+	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModal('WeatherSpring', 'WeatherSpring เป็นเว็บไซต์ตรวจเช็คสภาพอากาศในจังหวัดต่างๆของประเทศไทย ณ เวลาปัจจุบัน', ['images/weatherpro.png'])">WeatherSpring</h3>
 	              <p class="mb-4">WeatherSpring เป็นเว็บไซต์ตรวจเช็คสภาพอากาศในจังหวัดต่างๆของประเทศไทย ณ เวลาปัจจุบัน</p>
 	            </div>
 						</div>
     			</div>
     			<div class="col-md-4">
     				<div class="blog-entry ftco-animate">
-							<a href="#" class="img img-2" style="background-image: url(images/n8nproject.png);"></a>
-							<div class="text text-2 pt-2 mt-3">
-	              <h3 class="mb-4"><a href="#">n8n Chat bot</a></h3>
+								<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/n8nproject.png); cursor:pointer;" onclick="openModal('n8n Chat bot', 'n8n Chatbot ai agent ใช้ n8n, Google Gemini, Wikipedia API, Simple Memory มาสร้างChatbot ถาม-ตอบ ที่นำข้อมูลที่ป้อนไปประมวลผลด้วยAI', ['images/n8nproject.png'])"></a>
+								<div class="text text-2 pt-2 mt-3">
+	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModal('n8n Chat bot', 'n8n Chatbot ai agent ใช้ n8n, Google Gemini, Wikipedia API, Simple Memory มาสร้างChatbot ถาม-ตอบ ที่นำข้อมูลที่ป้อนไปประมวลผลด้วยAI', ['images/n8nproject.png'])">n8n Chat bot</h3>
 	              <p class="mb-4">n8n Chatbot ai agent ใช้ n8n, Google Gemini, Wikipedia API, Simple Memory มาสร้างChatbot ถาม-ตอบ ที่นำข้อมูลที่ป้อนไปประมวลผลด้วยAI</p>
+	              </div>
+	            </div>
+						</div>
+				<div class="col-md-4">
+					<div class="blog-entry ftco-animate">
+								<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/Legal1.png); cursor:pointer;" onclick="openModal('New Legal', 'New Legal เป็นโปรเจคเว็บไซต์เกี่ยวกับกฎหมายสำหรับการทำเรื่องขอหนังสือค้ำประกันต่างๆภายในบริษัท Plan B Media ซึ่งเป็นโปรเจคที่ทำในระหว่างฝึกงาน โดยรับผิดชอบในหน้าการขอหนังสือค้ำประกัน และ การสร้างหนังสือค้ำประกัน โดยทำงานทั้งในส่วนการทำงานหน้าบ้าน และ หลังบ้าน รวมถึุงการจัดการ Data base', ['images/Legal1.png', 'images/Legal2.png', 'images/Legal3.png', 'images/Legal4.png', 'images/Legal5.png'])"></a>
+								<div class="text text-2 pt-2 mt-3">
+	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModal('New Legal', 'New Legal เป็นโปรเจคเว็บไซต์เกี่ยวกับกฎหมายสำหรับการทำเรื่องขอหนังสือค้ำประกันต่างๆภายในบริษัท Plan B Media ซึ่งเป็นโปรเจคที่ทำในระหว่างฝึกงาน โดยรับผิดชอบในหน้าการขอหนังสือค้ำประกัน และ การสร้างหนังสือค้ำประกัน โดยทำงานทั้งในส่วนการทำงานหน้าบ้าน และ หลังบ้าน รวมถึุงการจัดการ Data base', ['images/Legal1.png', 'images/Legal2.png', 'images/Legal3.png', 'images/Legal4.png', 'images/Legal5.png'])">New Legal</h3>
+	              <p class="mb-4">New Legal เป็นโปรเจคเว็บไซต์เกี่ยวกับกฎหมายสำหรับการทำเรื่องขอหนังสือค้ำประกันต่างๆภายในบริษัท Plan B Media ซึ่งเป็นโปรเจคที่ทำในระหว่างฝึกงาน โดยรับผิดชอบในหน้าการขอหนังสือค้ำประกัน และ การสร้างหนังสือค้ำประกัน โดยทำงานทั้งในส่วนการทำงานหน้าบ้าน และ หลังบ้าน รวมถึุงการจัดการ Data base</p>
+	              </div>
+	            </div>
+						</div>
+				<div class="col-md-4">
+					<div class="blog-entry ftco-animate">
+								<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/Line1.png); cursor:pointer;" onclick="openModal('Line Chat Bot', 'Line Chatbot Vertex AI ที่ใช้ Gemini ในการประมวลผลข้อความและตอบคำถามจากผู้ใช้ โดยจะนำข้อมูลมาจาก RAG หรือไฟล์ข้อมูลภายในบริษัท PLan B Media มาเพื่อให้หนักงานใช้สำหรับถามตอบ แต่งานนี้อยู่ในระดับ POC', ['images/Line1.png'])"></a>
+								<div class="text text-2 pt-2 mt-3">
+	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModal('Line Chat Bot', 'Line Chatbot Vertex AI ที่ใช้ Gemini ในการประมวลผลข้อความและตอบคำถามจากผู้ใช้ โดยจะนำข้อมูลมาจาก RAG หรือไฟล์ข้อมูลภายในบริษัท PLan B Media มาเพื่อให้หนักงานใช้สำหรับถามตอบ แต่งานนี้อยู่ในระดับ POC', ['images/Line1.png'])">Line Chat Bot</h3>
+	              <p class="mb-4">Line Chatbot Vertex AI ที่ใช้ Gemini ในการประมวลผลข้อความและตอบคำถามจากผู้ใช้ โดยจะนำข้อมูลมาจาก RAG หรือไฟล์ข้อมูลภายในบริษัท PLan B Media มาเพื่อให้หนักงานใช้สำหรับถามตอบ แต่งานนี้อยู่ในระดับ POC</p>
+	              </div>
+	            </div>
+						</div>
+				<div class="col-md-4">
+					<div class="blog-entry ftco-animate">
+								<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/Avatar1.png); cursor:pointer;" onclick="openModal('Avatar Orientation', 'Avatar Orientation เป็นโปรเจคเว็บไซต์ที่ใช้ในการแสดงพูดนำเสนอสไลด์ในวัน Orientation ของบริษัท Plan B Media โดยได้มีแนวคิดการนำ Avatar มาใช้ในการนำเสนอแทนคนเพื่อลดภาระหน้าที่ของผู้ที่ต้องนำเสนอ โดยจะใช้หลักการ TTS (Text-to-Speech) เข้ามาใช้เพื่อให้ Avatar สามารถพูดและตอบคำถามได้', ['images/Avatar1.png', 'images/Avartar2.png'])"></a>
+								<div class="text text-2 pt-2 mt-3">
+	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModal('Avatar Orientation', 'Avatar Orientation เป็นโปรเจคเว็บไซต์ที่ใช้ในการแสดงพูดนำเสนอสไลด์ในวัน Orientation ของบริษัท Plan B Media โดยได้มีแนวคิดการนำ Avatar มาใช้ในการนำเสนอแทนคนเพื่อลดภาระหน้าที่ของผู้ที่ต้องนำเสนอ โดยจะใช้หลักการ TTS (Text-to-Speech) เข้ามาใช้เพื่อให้ Avatar สามารถพูดและตอบคำถามได้', ['images/Avatar1.png', 'images/Avartar2.png'])">Avatar Orientation</h3>
+	              <p class="mb-4">Avatar Orientation เป็นโปรเจคเว็บไซต์ที่ใช้ในการแสดงพูดนำเสนอสไลด์ในวัน Orientation ของบริษัท Plan B Media โดยได้มีแนวคิดการนำ Avatar มาใช้ในการนำเสนอแทนคนเพื่อลดภาระหน้าที่ของผู้ที่ต้องนำเสนอ โดยจะใช้หลักการ TTS (Text-to-Speech) เข้ามาใช้เพื่อให้ Avatar สามารถพูดและตอบคำถามได้</p>
 	              </div>
 	            </div>
 						</div>
@@ -264,23 +327,19 @@
 				<div class="row">
     			<div class="col-md-4">
     				<div class="blog-entry ftco-animate">
-							<a href="#" class="img img-2" style="background-image: url(images/cspcer.png);"></a>
+							<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/cspcer.png); cursor:pointer;" onclick="openModal('Customer Service with Python: Build a Chatbot using ChatGPT', 'หลักสูตรการพัฒนาอัตโนมัติที่สามารถช่วยตอบคำถามลูกค้าในงานบริการ โดยใช้ ChatGPT ร่วมกับ Python เหมาะสำหรับผู้ที่ต้องการนำ AI ไปประยุกต์ใช้ในธุรกิจ', ['images/cspcer.png'])"></a>
 							<div class="text text-2 pt-2 mt-3">
-	              <h3 class="mb-4">Customer Service with Python: Build a Chatbot using ChatGPT</a></h3>
+	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModal('Customer Service with Python: Build a Chatbot using ChatGPT', 'หลักสูตรการพัฒนาอัตโนมัติที่สามารถช่วยตอบคำถามลูกค้าในงานบริการ โดยใช้ ChatGPT ร่วมกับ Python เหมาะสำหรับผู้ที่ต้องการนำ AI ไปประยุกต์ใช้ในธุรกิจ', ['images/cspcer.png'])">Customer Service with Python: Build a Chatbot using ChatGPT</h3>
 	              <p class="mb-4">หลักสูตรการพัฒนาอัตโนมัติที่สามารถช่วยตอบคำถามลูกค้าในงานบริการ โดยใช้ ChatGPT ร่วมกับ Python เหมาะสำหรับผู้ที่ต้องการนำ AI ไปประยุกต์ใช้ในธุรกิจ</p>
 	            </div>
 						</div>
     			</div>
     			<div class="col-md-4">
     				<div class="blog-entry ftco-animate">
-							<a href="#" class="img img-2" style="background-image: url(images/cybercer.png);"></a>
+							<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/cybercer.png); cursor:pointer;" onclick="openModal('Basic Cybersecurity', 'Certificate Basic Cybersecurity ใบยืนยันเกี่ยวกับการป้องกันการเจาะข้อมูลและการตรวจสอบข้อมูลของฝ่ายตรงข้าม', ['images/cybercer.png'])"></a>
 							<div class="text text-2 pt-2 mt-3">
-	              <h3 class="mb-4"><a href="#">Basic Cybersecurity</a></h3>
+	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModal('Basic Cybersecurity', 'Certificate Basic Cybersecurity ใบยืนยันเกี่ยวกับการป้องกันการเจาะข้อมูลและการตรวจสอบข้อมูลของฝ่ายตรงข้าม', ['images/cybercer.png'])">Basic Cybersecurity</h3>
 	              <p class="mb-4">Certificate Basic Cybersecurity ใบยืนยันเกี่ยวกับการป้องกันการเจาะข้อมูลและการตรวจสอบข้อมูลของฝ่ายตรงข้าม</p>
-	              <div class="author mb-4 d-flex align-items-center">
-	            	</div>
-	              <div class="meta-wrap align-items-center">
-	              	</div>
 	            </div>
     			</div>
     		</div>
@@ -315,6 +374,34 @@
 		</div><!-- END COLORLIB-MAIN -->
 	</div><!-- END COLORLIB-PAGE -->
 
+  <!-- Portfolio Modal -->
+  <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content" style="border-radius: 15px; overflow: hidden;">
+        <div class="modal-body p-0">
+          <!-- ส่วนรูปภาพ (Carousel) -->
+          <div id="carouselProject" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" id="modalImages">
+              <!-- รูปภาพจะถูกใส่ด้วย JavaScript -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselProject" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselProject" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <!-- ส่วนข้อความ -->
+          <div class="p-4 bg-white">
+            <h3 id="modalTitle" class="mb-3"></h3>
+            <p id="modalDescription" class="text-muted"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
@@ -335,6 +422,38 @@
   <script src="js/scrollax.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
+  <script>
+    // Function to open portfolio modal with carousel
+    function openModal(title, description, images) {
+      // ใส่หัวข้อและรายละเอียด
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalDescription').innerText = description;
+
+      // เคลียร์รูปเก่าและใส่รูปใหม่
+      const imageContainer = document.getElementById('modalImages');
+      imageContainer.innerHTML = '';
+
+      images.forEach((src, index) => {
+        const div = document.createElement('div');
+        div.className = `carousel-item ${index === 0 ? 'active' : ''}`;
+        div.innerHTML = `<img src="${src}" class="d-block w-100" style="height: 400px; object-fit: cover;">`;
+        imageContainer.appendChild(div);
+      });
+
+      // ซ่อนปุ่มเลื่อนถ้ามีรูปเดียว
+      const controls = document.querySelectorAll('.carousel-control-prev, .carousel-control-next');
+      controls.forEach(control => {
+        control.style.display = images.length > 1 ? 'flex' : 'none';
+      });
+
+      // Reinitialize carousel
+      $('#carouselProject').carousel('dispose');
+      $('#carouselProject').carousel();
+
+      // สั่งให้ Modal แสดงผล
+      $('#portfolioModal').modal('show');
+    }
+  </script>
   <script src="js/main.js"></script>
     
   </body>
