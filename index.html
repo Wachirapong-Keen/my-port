@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<title>Portfolio</title>
+	<title>Wachirapong Rueangwarapan | Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -38,15 +38,19 @@
 		<aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
 			<h1 id="colorlib-logo"><a href="index.html">Keen<span>.</span></a></h1>
 			<nav id="colorlib-main-menu" role="navigation">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#about">About Me</a></li>
-					<li><a href="#skill">My Skills</a></li>
-					<li><a href="#port">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
+				<!-- 🌐 Language Switcher -->
+			<div class="language-switcher text-center mt-3">
+			<button onclick="setLanguage('th')" class="btn btn-sm btn-light" id="btn-th" style="transition: all 0.3s;">TH</button>
+			/
+			<button onclick="setLanguage('en')" class="btn btn-sm btn-light" id="btn-en" style="transition: all 0.3s;">EN</button>
+			</div>
+				<ul style="margin-top: 20px;">
+				<li><a href="index.html" data-i18n="home">Home</a></li>
+				<li><a href="#about" data-i18n="about">About Me</a></li>
+				<li><a href="#skill" data-i18n="skills">My Skills</a></li>
+				<li><a href="#port" data-i18n="portfolio">Portfolio</a></li>
+				<li><a href="#contact" data-i18n="contact">Contact</a></li>
 				</ul>
-			</nav>
-
 			<div class="colorlib-footer">
 				<ul>
 					<li><a href="https://www.facebook.com/wchir.phngs.reuxng.w.ra.phanthu"><i class="icon-facebook"></i></a></li>
@@ -62,9 +66,9 @@
 					<div class="col-md-8 text text-center">
 						<div class="img mb-4" style="background-image: url(images/author.jpg);"></div>
 						<div class="desc">
-							<h2 class="subheading">Hello I'm Keen</h2>
-							<h1 class="mb-4">Wachirapong Rueangwarapan</h1>
-							<p class="mb-4">สวัสดีครับ ผมชื่อ วชิรพงศ์ เรืองวราพันธุ์ (คีน) จบการศึกษาจากมหาวิทยาลัยกรุงเทพ สาขาวิทยาการคอมพิวเตอร์ และมีความสนใจด้านเทคโนโลยีรวมถึงการพัฒนาโปรแกรม โดยมีเป้าหมายในการเติบโตเป็นโปรแกรมเมอร์ในอนาคต ผมพร้อมเรียนรู้และพัฒนาทักษะใหม่ ๆ อยู่เสมอ เพื่อให้สามารถปรับตัวและก้าวทันกับเทคโนโลยีที่เปลี่ยนแปลงอย่างต่อเนื่อง</p>
+						<h2 class="subheading" data-i18n="subheading">Hello</h2>
+						<h1 class="mb-4" data-i18n="name">Wachirapong Rueangwarapan</h1>
+						<p class="mb-4" data-i18n="intro">สวัสดีครับ ผมชื่อ วชิรพงศ์ เรืองวราพันธุ์ (คีน) จบการศึกษาจากมหาวิทยาลัยกรุงเทพ สาขาวิทยาการคอมพิวเตอร์ และมีความสนใจด้านเทคโนโลยีรวมถึงการพัฒนาโปรแกรม โดยมีเป้าหมายในการเติบโตเป็นโปรแกรมเมอร์ในอนาคต ผมพร้อมเรียนรู้และพัฒนาทักษะใหม่ ๆ อยู่เสมอ เพื่อให้สามารถปรับตัวและก้าวทันกับเทคโนโลยีที่เปลี่ยนแปลงอย่างต่อเนื่อง</p>
 							<p><a href="#about" class="btn-custom">More About Me <span class="ion-ios-arrow-forward"></span></a></p>
 						</div>
 					</div>
@@ -74,13 +78,13 @@
     	<div class="container">
     		<div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <h2 id="about" class="mb-4">About Me</h2>
-            <p>นักพัฒนาโปรแกรมระดับ Junior (Full-Stack Developer) ที่สนใจด้านการพัฒนา Web Application และ RESTful APIs มีประสบการณ์ในการพัฒนาระบบภายในองค์กร ทั้งฝั่ง Front-end และ Back-end รวมถึงการทำงานร่วมกับฐานข้อมูล มุ่งเน้นการพัฒนาโซลูชันที่สามารถใช้งานได้จริง พร้อมเรียนรู้และพัฒนาทักษะด้านเทคโนโลยีใหม่ ๆ อย่างต่อเนื่อง
+            <h2 id="about" class="mb-4" data-i18n="aboutTitle">About Me</h2>
+            <p data-i18n="aboutDesc">นักพัฒนาโปรแกรมระดับ Junior (Full-Stack Developer) ที่สนใจด้านการพัฒนา Web Application และ RESTful APIs มีประสบการณ์ในการพัฒนาระบบภายในองค์กร ทั้งฝั่ง Front-end และ Back-end รวมถึงการทำงานร่วมกับฐานข้อมูล มุ่งเน้นการพัฒนาโซลูชันที่สามารถใช้งานได้จริง พร้อมเรียนรู้และพัฒนาทักษะด้านเทคโนโลยีใหม่ ๆ อย่างต่อเนื่อง
 			</p>
           </div>
         </div>
 		<section class="education-section">
-			<h2 class="section-title">Experience</h2>
+			<h2 class="section-title" data-i18n="experience">Experience</h2>
 
 			<div class="timeline">
 
@@ -98,7 +102,7 @@
 		</section>
 
 		<section class="education-section">
-			<h2 class="section-title">Education</h2>
+			<h2 class="section-title" data-i18n="education">Education</h2>
 
 			<div class="timeline">
 
@@ -127,11 +131,11 @@
 
 		<section class="skills-section">
 		<div class="container">
-			<h2 id="skill" class="text-center mb-5">My Skills</h2>
+			<h2 id="skill" class="text-center mb-5" data-i18n="mySkills" style="font-weight: bold;">My Skills</h2>
 
 			<!-- 🟢 Coding Skills -->
 			<div class="skill-category">
-			<h3 class="category-title">Coding Skills</h3>
+			<h3 class="category-title" data-i18n="codingSkills">Coding Skills</h3>
 			<div class="skills-grid">
 				<div class="skill-item">
 				<img src="images/html.png" alt="HTML">
@@ -182,7 +186,7 @@
 
 			<!-- 🧠 AI & Automation & Data Skills -->
 			<div class="skill-category">
-			<h3 class="category-title">AI & Automation & Data Skills</h3>
+			<h3 class="category-title" data-i18n="aiSkills">AI & Automation & Data Skills</h3>
 			<div class="skills-grid">
 				<div class="skill-item">
 				<img src="images/n8n.png" alt="n8n">
@@ -217,7 +221,7 @@
 
 			<!-- 🧰 Tools -->
 			<div class="skill-category">
-			<h3 class="category-title">Tools</h3>
+			<h3 class="category-title" data-i18n="tools">Tools</h3>
 			<div class="skills-grid">
 				<div class="skill-item">
 				<img src="images/vscode.png" alt="VS Code">
@@ -265,80 +269,80 @@
 		</div>
 		</section>
 
-			<h2 id="port" class="text-center mb-5">Portfolio</h2>
+			<h2 id="port" class="text-center mb-5" data-i18n="portfolio" style="font-weight: bold;">Portfolio</h2>
     		<div class="row">
     			<div class="col-md-4">
     				<div class="blog-entry ftco-animate">
-							<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/busem.png); cursor:pointer;" onclick="openModal('BUSEM Seminar Website', 'BUSEM Seminar Project เป็นโปรเจ็คที่เกิดขึ้นมาจากความร่วมมือของนักศึกษา และ คณะการสร้างเจ้าของธุรกิจและการบริหารกิจการ', ['images/busem.png'])"></a>
+							<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/busem.png); cursor:pointer;" onclick="openModalTranslated('busemTitle', 'busemDesc', ['images/busem.png'])"></a>
 							<div class="text text-2 pt-2 mt-3">
-	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModal('BUSEM Seminar Website', 'BUSEM Seminar Project เป็นโปรเจ็คที่เกิดขึ้นมาจากความร่วมมือของนักศึกษา และ คณะการสร้างเจ้าของธุรกิจและการบริหารกิจการ', ['images/busem.png'])">BUSEM Seminar Website</h3>
-	              <p class="mb-4">BUSEM Seminar Project เป็นโปรเจ็คที่เกิดขึ้นมาจากความร่วมมือของนักศึกษา และ คณะการสร้างเจ้าของธุรกิจและการบริหารกิจการ เพื่อทำเว็บไซต์สำหรับลงทะเบียนงานสัมมนาของนักศึกษาภายในคณะ</p>
+	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModalTranslated('busemTitle', 'busemDesc', ['images/busem.png'])" data-i18n="busemTitle">BUSEM Seminar Website</h3>
+	              <p class="mb-4" data-i18n="busemDesc">BUSEM Seminar Project เป็นโปรเจ็คที่เกิดขึ้นมาจากความร่วมมือของนักศึกษา และ คณะการสร้างเจ้าของธุรกิจและการบริหารกิจการ</p>
 	            </div>
 						</div>
     			</div>
     			<div class="col-md-4">
     				<div class="blog-entry ftco-animate">
-							<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/weatherpro.png); cursor:pointer;" onclick="openModal('WeatherSpring', 'WeatherSpring เป็นเว็บไซต์ตรวจเช็คสภาพอากาศในจังหวัดต่างๆของประเทศไทย ณ เวลาปัจจุบัน', ['images/weatherpro.png'])"></a>
+							<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/weatherpro.png); cursor:pointer;" onclick="openModalTranslated('weatherTitle', 'weatherDesc', ['images/weatherpro.png'])"></a>
 							<div class="text text-2 pt-2 mt-3">
-	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModal('WeatherSpring', 'WeatherSpring เป็นเว็บไซต์ตรวจเช็คสภาพอากาศในจังหวัดต่างๆของประเทศไทย ณ เวลาปัจจุบัน', ['images/weatherpro.png'])">WeatherSpring</h3>
-	              <p class="mb-4">WeatherSpring เป็นเว็บไซต์ตรวจเช็คสภาพอากาศในจังหวัดต่างๆของประเทศไทย ณ เวลาปัจจุบัน</p>
+	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModalTranslated('weatherTitle', 'weatherDesc', ['images/weatherpro.png'])" data-i18n="weatherTitle">WeatherSpring</h3>
+	              <p class="mb-4" data-i18n="weatherDesc">WeatherSpring เป็นเว็บไซต์ตรวจเช็คสภาพอากาศในจังหวัดต่างๆของประเทศไทย ณ เวลาปัจจุบัน</p>
 	            </div>
 						</div>
     			</div>
     			<div class="col-md-4">
     				<div class="blog-entry ftco-animate">
-								<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/n8nproject.png); cursor:pointer;" onclick="openModal('n8n Chat bot', 'n8n Chatbot ai agent ใช้ n8n, Google Gemini, Wikipedia API, Simple Memory มาสร้างChatbot ถาม-ตอบ ที่นำข้อมูลที่ป้อนไปประมวลผลด้วยAI', ['images/n8nproject.png'])"></a>
+								<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/n8nproject.png); cursor:pointer;" onclick="openModalTranslated('n8nTitle', 'n8nDesc', ['images/n8nproject.png'])"></a>
 								<div class="text text-2 pt-2 mt-3">
-	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModal('n8n Chat bot', 'n8n Chatbot ai agent ใช้ n8n, Google Gemini, Wikipedia API, Simple Memory มาสร้างChatbot ถาม-ตอบ ที่นำข้อมูลที่ป้อนไปประมวลผลด้วยAI', ['images/n8nproject.png'])">n8n Chat bot</h3>
-	              <p class="mb-4">n8n Chatbot ai agent ใช้ n8n, Google Gemini, Wikipedia API, Simple Memory มาสร้างChatbot ถาม-ตอบ ที่นำข้อมูลที่ป้อนไปประมวลผลด้วยAI</p>
+	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModalTranslated('n8nTitle', 'n8nDesc', ['images/n8nproject.png'])" data-i18n="n8nTitle">n8n Chat bot</h3>
+	              <p class="mb-4" data-i18n="n8nDesc">n8n Chatbot AI agent ใช้ n8n, Google Gemini, Wikipedia API, Simple Memory มาสร้าง Chatbot ถาม-ตอบ ที่นำข้อมูลที่ป้อนไปประมวลผลด้วย AI</p>
 	              </div>
 	            </div>
 						</div>
 				<div class="col-md-4">
 					<div class="blog-entry ftco-animate">
-								<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/Legal1.png); cursor:pointer;" onclick="openModal('New Legal', 'New Legal เป็นโปรเจคเว็บไซต์เกี่ยวกับกฎหมายสำหรับการทำเรื่องขอหนังสือค้ำประกันต่างๆภายในบริษัท Plan B Media ซึ่งเป็นโปรเจคที่ทำในระหว่างฝึกงาน โดยรับผิดชอบในหน้าการขอหนังสือค้ำประกัน และ การสร้างหนังสือค้ำประกัน โดยทำงานทั้งในส่วนการทำงานหน้าบ้าน และ หลังบ้าน รวมถึุงการจัดการ Data base', ['images/Legal1.png', 'images/Legal2.png', 'images/Legal3.png', 'images/Legal4.png', 'images/Legal5.png'])"></a>
+								<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/Legal1.png); cursor:pointer;" onclick="openModalTranslated('newLegalTitle', 'newLegalDesc', ['images/Legal1.png', 'images/Legal2.png', 'images/Legal3.png', 'images/Legal4.png', 'images/Legal5.png'])"></a>
 								<div class="text text-2 pt-2 mt-3">
-	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModal('New Legal', 'New Legal เป็นโปรเจคเว็บไซต์เกี่ยวกับกฎหมายสำหรับการทำเรื่องขอหนังสือค้ำประกันต่างๆภายในบริษัท Plan B Media ซึ่งเป็นโปรเจคที่ทำในระหว่างฝึกงาน โดยรับผิดชอบในหน้าการขอหนังสือค้ำประกัน และ การสร้างหนังสือค้ำประกัน โดยทำงานทั้งในส่วนการทำงานหน้าบ้าน และ หลังบ้าน รวมถึุงการจัดการ Data base', ['images/Legal1.png', 'images/Legal2.png', 'images/Legal3.png', 'images/Legal4.png', 'images/Legal5.png'])">New Legal</h3>
-	              <p class="mb-4">New Legal เป็นโปรเจคเว็บไซต์เกี่ยวกับกฎหมายสำหรับการทำเรื่องขอหนังสือค้ำประกันต่างๆภายในบริษัท Plan B Media ซึ่งเป็นโปรเจคที่ทำในระหว่างฝึกงาน โดยรับผิดชอบในหน้าการขอหนังสือค้ำประกัน และ การสร้างหนังสือค้ำประกัน โดยทำงานทั้งในส่วนการทำงานหน้าบ้าน และ หลังบ้าน รวมถึุงการจัดการ Data base</p>
+	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModalTranslated('newLegalTitle', 'newLegalDesc', ['images/Legal1.png', 'images/Legal2.png', 'images/Legal3.png', 'images/Legal4.png', 'images/Legal5.png'])" data-i18n="newLegalTitle">New Legal</h3>
+	              <p class="mb-4" data-i18n="newLegalDesc">New Legal เป็นโปรเจคเว็บไซต์เกี่ยวกับกฎหมายสำหรับการทำเรื่องขอหนังสือค้ำประกันต่างๆภายในบริษัท Plan B Media ซึ่งเป็นโปรเจคที่ทำในระหว่างฝึกงาน โดยรับผิดชอบในหน้าการขอหนังสือค้ำประกัน และ การสร้างหนังสือค้ำประกัน โดยทำงานทั้งในส่วนการทำงานหน้าบ้าน และ หลังบ้าน รวมถึงการจัดการ Database</p>
 	              </div>
 	            </div>
 						</div>
 				<div class="col-md-4">
 					<div class="blog-entry ftco-animate">
-								<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/Line1.png); cursor:pointer;" onclick="openModal('Line Chat Bot', 'Line Chatbot Vertex AI ที่ใช้ Gemini ในการประมวลผลข้อความและตอบคำถามจากผู้ใช้ โดยจะนำข้อมูลมาจาก RAG หรือไฟล์ข้อมูลภายในบริษัท PLan B Media มาเพื่อให้หนักงานใช้สำหรับถามตอบ แต่งานนี้อยู่ในระดับ POC', ['images/Line1.png'])"></a>
-								<div class="text text-2 pt-2 mt-3">
-	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModal('Line Chat Bot', 'Line Chatbot Vertex AI ที่ใช้ Gemini ในการประมวลผลข้อความและตอบคำถามจากผู้ใช้ โดยจะนำข้อมูลมาจาก RAG หรือไฟล์ข้อมูลภายในบริษัท PLan B Media มาเพื่อให้หนักงานใช้สำหรับถามตอบ แต่งานนี้อยู่ในระดับ POC', ['images/Line1.png'])">Line Chat Bot</h3>
-	              <p class="mb-4">Line Chatbot Vertex AI ที่ใช้ Gemini ในการประมวลผลข้อความและตอบคำถามจากผู้ใช้ โดยจะนำข้อมูลมาจาก RAG หรือไฟล์ข้อมูลภายในบริษัท PLan B Media มาเพื่อให้หนักงานใช้สำหรับถามตอบ แต่งานนี้อยู่ในระดับ POC</p>
+							<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/Line1.png); cursor:pointer;" onclick="openModalTranslated('lineBotTitle', 'lineBotDesc', ['images/Line1.png'])"></a>
+							<div class="text text-2 pt-2 mt-3">
+	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModalTranslated('lineBotTitle', 'lineBotDesc', ['images/Line1.png'])" data-i18n="lineBotTitle">Line Chat Bot</h3>
+	              <p class="mb-4" data-i18n="lineBotDesc">Line Chatbot Vertex AI ที่ใช้ Gemini ในการประมวลผลข้อความและตอบคำถามจากผู้ใช้ โดยจะนำข้อมูลมาจาก RAG หรือไฟล์ข้อมูลภายในบริษัท PLan B Media มาเพื่อให้หนักงานใช้สำหรับถามตอบ แต่งานนี้อยู่ในระดับ POC</p>
 	              </div>
 	            </div>
 						</div>
 				<div class="col-md-4">
 					<div class="blog-entry ftco-animate">
-								<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/Avatar1.png); cursor:pointer;" onclick="openModal('Avatar Orientation', 'Avatar Orientation เป็นโปรเจคเว็บไซต์ที่ใช้ในการแสดงพูดนำเสนอสไลด์ในวัน Orientation ของบริษัท Plan B Media โดยได้มีแนวคิดการนำ Avatar มาใช้ในการนำเสนอแทนคนเพื่อลดภาระหน้าที่ของผู้ที่ต้องนำเสนอ โดยจะใช้หลักการ TTS (Text-to-Speech) เข้ามาใช้เพื่อให้ Avatar สามารถพูดและตอบคำถามได้', ['images/Avatar1.png', 'images/Avartar2.png'])"></a>
+								<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/Avatar1.png); cursor:pointer;" onclick="openModalTranslated('avatarTitle', 'avatarDesc', ['images/Avatar1.png', 'images/Avartar2.png'])"></a>
 								<div class="text text-2 pt-2 mt-3">
-	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModal('Avatar Orientation', 'Avatar Orientation เป็นโปรเจคเว็บไซต์ที่ใช้ในการแสดงพูดนำเสนอสไลด์ในวัน Orientation ของบริษัท Plan B Media โดยได้มีแนวคิดการนำ Avatar มาใช้ในการนำเสนอแทนคนเพื่อลดภาระหน้าที่ของผู้ที่ต้องนำเสนอ โดยจะใช้หลักการ TTS (Text-to-Speech) เข้ามาใช้เพื่อให้ Avatar สามารถพูดและตอบคำถามได้', ['images/Avatar1.png', 'images/Avartar2.png'])">Avatar Orientation</h3>
-	              <p class="mb-4">Avatar Orientation เป็นโปรเจคเว็บไซต์ที่ใช้ในการแสดงพูดนำเสนอสไลด์ในวัน Orientation ของบริษัท Plan B Media โดยได้มีแนวคิดการนำ Avatar มาใช้ในการนำเสนอแทนคนเพื่อลดภาระหน้าที่ของผู้ที่ต้องนำเสนอ โดยจะใช้หลักการ TTS (Text-to-Speech) เข้ามาใช้เพื่อให้ Avatar สามารถพูดและตอบคำถามได้</p>
+	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModalTranslated('avatarTitle', 'avatarDesc', ['images/Avatar1.png', 'images/Avartar2.png'])" data-i18n="avatarTitle">Avatar Orientation</h3>
+	              <p class="mb-4" data-i18n="avatarDesc">Avatar Orientation เป็นโปรเจคเว็บไซต์ที่ใช้ในการแสดงพูดนำเสนอสไลด์ในวัน Orientation ของบริษัท Plan B Media โดยได้มีแนวคิดการนำ Avatar มาใช้ในการนำเสนอแทนคนเพื่อลดภาระหน้าที่ของผู้ที่ต้องนำเสนอ โดยจะใช้หลักการ TTS (Text-to-Speech) เข้ามาใช้เพื่อให้ Avatar สามารถพูดและตอบคำถามได้</p>
 	              </div>
 	            </div>
 						</div>
     			</div>
-				<h2 id="port" class="text-center mb-5">Certificate</h2>
+				<h2 id="port" class="text-center mb-5" data-i18n="certificateTitle" style="font-weight: bold;">Certificate</h2>
 				<div class="row">
     			<div class="col-md-4">
     				<div class="blog-entry ftco-animate">
-							<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/cspcer.png); cursor:pointer;" onclick="openModal('Customer Service with Python: Build a Chatbot using ChatGPT', 'หลักสูตรการพัฒนาอัตโนมัติที่สามารถช่วยตอบคำถามลูกค้าในงานบริการ โดยใช้ ChatGPT ร่วมกับ Python เหมาะสำหรับผู้ที่ต้องการนำ AI ไปประยุกต์ใช้ในธุรกิจ', ['images/cspcer.png'])"></a>
-							<div class="text text-2 pt-2 mt-3">
-	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModal('Customer Service with Python: Build a Chatbot using ChatGPT', 'หลักสูตรการพัฒนาอัตโนมัติที่สามารถช่วยตอบคำถามลูกค้าในงานบริการ โดยใช้ ChatGPT ร่วมกับ Python เหมาะสำหรับผู้ที่ต้องการนำ AI ไปประยุกต์ใช้ในธุรกิจ', ['images/cspcer.png'])">Customer Service with Python: Build a Chatbot using ChatGPT</h3>
-	              <p class="mb-4">หลักสูตรการพัฒนาอัตโนมัติที่สามารถช่วยตอบคำถามลูกค้าในงานบริการ โดยใช้ ChatGPT ร่วมกับ Python เหมาะสำหรับผู้ที่ต้องการนำ AI ไปประยุกต์ใช้ในธุรกิจ</p>
+						<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/cspcer.png); cursor:pointer;" onclick="openModalTranslated('chatgptCertTitle', 'chatgptCertDesc', ['images/cspcer.png'])"></a>
+						<div class="text text-2 pt-2 mt-3">
+          <h3 class="mb-4" style="cursor:pointer;" onclick="openModalTranslated('chatgptCertTitle', 'chatgptCertDesc', ['images/cspcer.png'])" data-i18n="chatgptCertTitle">Customer Service with Python: Build a Chatbot using ChatGPT</h3>
+          <p class="mb-4" data-i18n="chatgptCertDesc">หลักสูตรการพัฒนาอัตโนมัติที่สามารถช่วยตอบคำถามลูกค้าในงานบริการ โดยใช้ ChatGPT ร่วมกับ Python เหมาะสำหรับผู้ที่ต้องการนำ AI ไปประยุกต์ใช้ในธุรกิจ</p>
 	            </div>
 						</div>
     			</div>
     			<div class="col-md-4">
     				<div class="blog-entry ftco-animate">
-							<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/cybercer.png); cursor:pointer;" onclick="openModal('Basic Cybersecurity', 'Certificate Basic Cybersecurity ใบยืนยันเกี่ยวกับการป้องกันการเจาะข้อมูลและการตรวจสอบข้อมูลของฝ่ายตรงข้าม', ['images/cybercer.png'])"></a>
-							<div class="text text-2 pt-2 mt-3">
-	              <h3 class="mb-4" style="cursor:pointer;" onclick="openModal('Basic Cybersecurity', 'Certificate Basic Cybersecurity ใบยืนยันเกี่ยวกับการป้องกันการเจาะข้อมูลและการตรวจสอบข้อมูลของฝ่ายตรงข้าม', ['images/cybercer.png'])">Basic Cybersecurity</h3>
-	              <p class="mb-4">Certificate Basic Cybersecurity ใบยืนยันเกี่ยวกับการป้องกันการเจาะข้อมูลและการตรวจสอบข้อมูลของฝ่ายตรงข้าม</p>
+						<a href="javascript:void(0)" class="img img-2" style="background-image: url(images/cybercer.png); cursor:pointer;" onclick="openModalTranslated('cybersecurityTitle', 'cybersecurityDesc', ['images/cybercer.png'])"></a>
+						<div class="text text-2 pt-2 mt-3">
+          <h3 class="mb-4" style="cursor:pointer;" onclick="openModalTranslated('cybersecurityTitle', 'cybersecurityDesc', ['images/cybercer.png'])" data-i18n="cybersecurityTitle">Basic Cybersecurity</h3>
+          <p class="mb-4" data-i18n="cybersecurityDesc">Certificate Basic Cybersecurity ใบยืนยันเกี่ยวกับการป้องกันการเจาะข้อมูลและการตรวจสอบข้อมูลของฝ่ายตรงข้าม</p>
 	            </div>
     			</div>
     		</div>
@@ -347,11 +351,8 @@
     <footer id="contact" class="ftco-footer ftco-bg-dark ftco-section">
 		<div class="col-md text-white">
 			<div class="ftco-footer-widget mb-4 text-center">
-			<h2 class="ftco-heading-2 mb-4 display-5 font-weight-bold">Contact Me</h2>
-			<p>
-				I'm currently available for work and open to new opportunities.<br>
-				Feel free to reach out!
-			</p>
+			<h2 class="ftco-heading-2 mb-4 display-5 font-weight-bold" data-i18n="contactTitle">Contact Me</h2>
+			<p data-i18n="contactDesc">I'm currently available for work and open to new opportunities.<br>Feel free to reach out!</p>
 			<div class="contact-horizontal d-flex justify-content-center align-items-center mt-4 flex-wrap gap-4">
 				<div class="d-flex align-items-center mx-3 my-2">
 				<span class="icon icon-envelope mr-2"></span>
